@@ -11,7 +11,6 @@ class Image extends Component {
 
     componentDidMount(){
         this.myRef.current.addEventListener('load', () =>{
-            console.log(this.myRef.current.clientHeight);
             const spanCounter = Math.round(this.myRef.current.clientHeight/5) + 1;
             this.setState({
                 spanCount : spanCounter
