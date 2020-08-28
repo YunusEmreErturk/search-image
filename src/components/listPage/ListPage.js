@@ -1,14 +1,16 @@
 import React from 'react'
+import "./ListPage.css"
+import Image from "./Image";
 
 const ListPage = ({images}) => {
 
     const imageList = images.map(image => {
         return (
-            <img key={image.id} src={image.urls.small} alt=""/>
+            <Image key={image.id} image={image}/>
         )
     });
     return (
-        <div>
+        <div className="list-page-container">
             {imageList}
         </div>
     )
