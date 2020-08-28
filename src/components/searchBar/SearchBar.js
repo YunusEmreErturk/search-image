@@ -13,7 +13,7 @@ class SearchBar extends Component {
   };
 
   searchImage = () => {
-    console.log("success");
+    this.props.onSearchImage(this.state.searchWord);
   }
 
   render() {
